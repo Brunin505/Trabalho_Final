@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linguagens de Programação</title>
+</head>
+<body>
+    <header>
+        <h1>Projetos Arduino</h1>
+        <div class="right">
+            <a href="index.html">Página Inicial</a>
+            <a href="iluminacao.html">Controle de Iluminação</a>
+            <a href="curiosidades.html">Curiosidades Sobre o LDR</a>
+        </div>
+    </header>
+        <main>
+            <h1>Controle de Iluminação</h1>
+                <li>Montagem física no ARDUÍNO</li>
+            <div class="imagens">
+                <img src="./assets//teste.jpg   " alt="">
+            </div>
+            <hr>
+                <li>Exemplo de código C++</li>
+                <pre>
+                    // C++ code
+                    //
+                    int num = 0;
+
+                    void setup()
+                    {
+                    pinMode(A0, INPUT);
+                    pinMode(13, OUTPUT);
+                    pinMode(12, OUTPUT);
+                    pinMode(11, OUTPUT);
+
+                    num = 0;
+                    }
+
+                    void loop()
+                    {
+                    num = analogRead(A0);
+                    if (num >= 512) {
+                        digitalWrite(13, HIGH);
+                        digitalWrite(12, HIGH);
+                        digitalWrite(11, HIGH);
+                    }
+                    if (num < 512) {
+                        delay(5000); // Wait for 5000 millisecond(s)
+                        digitalWrite(13, LOW);
+                        digitalWrite(12, LOW);
+                        digitalWrite(11, LOW);
+                    }
+                    }
+                </pre>
+            <hr>
+                <li>Filmagem do controle de iluminação</li>
+            <video controls src="./assets/video.mp4"></video>
+            <hr>
+                <li>Medidas Realizadas com o Multímetro</li>
+            <div class="imagens">
+                <img src="./assets//medicao.jpeg" alt="" class="medicao">
+                <p>
+                    Nesta imagem, podemos abservar a medição do resistor de 10k, caracterizado pelas cores Marrom, Preto e Laranja
+                </p>
+            </div>
+            <hr>
+            <li>Ligação do LDR e LEDs no Tinkercad</li>
+            <div class="imagens">
+                <img src="./assets//blocos.png" alt="" class="boloco">
+                <img src="./assets//mam.png" alt="" class="boloco">
+                
+            </div>
+        </main>
+    </body>
+</html>

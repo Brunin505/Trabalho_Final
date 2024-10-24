@@ -1,0 +1,116 @@
+body{
+    color: white;
+    background-image: url(./assets/background.png);
+    width: auto;
+    max-height: fit-content;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: black;
+    padding: 2vh;
+    display: flex;
+}
+
+
+p{
+    text-align: justify;
+}
+
+main{
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 60vw;
+    background-color:black;
+    color: white;
+    border-radius: 30px;
+}
+h1,li{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+a, li{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size:x-large;
+}
+
+.right a{
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size:medium;
+    border-left: 1px solid white;
+    padding: 0 20px;
+    align-content: center;
+}
+
+.cont1{
+    margin: 2rem;
+    color: white;
+}
+img{
+    margin-left: 80px;
+    width: 30vw;
+    height: 30vh;
+}
+.imagens{
+    display: flex;
+}
+video{
+    max-width: 700px;
+    max-height: min-content;
+    border: 5px solid white;
+    border-radius: 8px;
+}
+
+.boloco{
+    height: 50vh;
+    width: 30vw;
+}
+
+.medicao{
+    height: 40vh;
+    width: 20vw;
+    margin-right: 40px;
+}
+
+.fabric{
+    height: 40vh;
+    width: 20vw;
+    margin-right: 40px;
+}
+
+
+.right{
+    margin-left: 40%;
+    align-items: center;
+    display: flex;  
+}
+
+.right a:hover{
+    cursor: pointer;
+    background-color: rgb(35, 46, 58);
+    display: flex;
+    width: auto;
+    height: 40px;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+main a{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(35, 46, 58);
+    border-radius: 14px;
+}
+
+iframe{
+    width: 50vw;
+    height: 60vh
+}
